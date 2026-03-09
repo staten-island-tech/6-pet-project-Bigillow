@@ -54,3 +54,10 @@
 
 # --------------------------------------------------------------------- #
 
+class Pet:
+    def __init__(self, name, happiness, health, warmth):
+        self.name = name
+        self.happiness = happiness
+        self.health = health
+        self.warmth= warmth
+    
