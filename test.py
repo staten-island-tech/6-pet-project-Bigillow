@@ -6,7 +6,7 @@ def gamble(quarters, one, two, three):
     z = 10 - three
     stage = 1
     play = 0
-    while money > 0:
+    while money > 0.25:
         if stage == 1 and x > 2 and money > 0:
             money -= 0.25
             stage += 1
