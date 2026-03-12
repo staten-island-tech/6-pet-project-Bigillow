@@ -6,13 +6,14 @@ def gamble(quarters, one, two, three):
     z = 10 - three
     stage = 1
     play = 0
-    while money > 0.25:
+    while money > 0:
+
         if stage == 1 and x > 2 and money > 0:
             money -= 0.25
             stage += 1
             x -= 1
             play += 1
-        elif stage == 1 and x == 1 and money > 0:
+        elif stage == 1 and x <= 1 and money > 0:
             money -= 0.25
             stage += 1
             x = 35
@@ -23,7 +24,7 @@ def gamble(quarters, one, two, three):
             stage += 1
             y -= 1
             play += 1
-        elif stage == 2 and y == 1 and money > 0:
+        elif stage == 2 and y <= 1 and money > 0:
             money -= 0.25
             stage += 1
             y = 100
@@ -34,7 +35,7 @@ def gamble(quarters, one, two, three):
             stage = 1
             z -= 1
             play += 1
-        elif stage == 3 and z == 1 and money > 0:
+        elif stage == 3 and z <= 1 and money > 0:
             money -= 0.25
             z = 10
             play += 1
