@@ -91,7 +91,7 @@ class Pet:
             self.health = self.health - self.health*0.1
             print(f"{self.pet_name} is at {self.health}% warmth.")
 
-    def hunger(self): 
+    def food(self): 
 
         print(f"{self.owner} fed {self.pet_name}")
         print(f"{self.owner} gained {0.25*self.hunger}% hunger")
@@ -127,3 +127,4 @@ class Pet:
 
 Dog = Pet("Ethan", "Dog", 100, 100, 100, 100)
 Dog.play()
+Dog.food()
