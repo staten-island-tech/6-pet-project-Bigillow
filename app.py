@@ -127,4 +127,3 @@ class Pet:
 
 Dog = Pet("Ethan", "Dog", 100, 100, 100, 100)
 Dog.play()
-Dog.hunger()
