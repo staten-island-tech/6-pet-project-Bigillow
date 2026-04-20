@@ -69,9 +69,9 @@ class Pet:
             print(f"{self.pet_name} is now at {self.happiness}% happiness.")
 
         if self.hunger > 0 and self.hunger < 100:
-            print(f"{self.owner} lose {0.15*self.hunger}% hunger")
+            print(f"{self.pet_name} lose {0.15*self.hunger}% hunger")
             self.hunger = self.hunger - 0.15*self.hunger
-            print(f"{self.owner} is at {self.hunger}% hunger")
+            print(f"{self.pet_name} is at {self.hunger}% hunger")
         
         if self.hunger > 50 and self.hunger < 100:
             print(f"{self.pet_name} gained {self.warmth*0.1}% warmth.")
@@ -94,9 +94,9 @@ class Pet:
     def food(self): 
 
         print(f"{self.owner} fed {self.pet_name}")
-        print(f"{self.owner} gained {0.25*self.hunger}% hunger")
+        print(f"{self.pet_name} gained {0.25*self.hunger}% hunger")
         self.hunger = self.hunger + 0.25*self.hunger
-        print(f"{self.owner} is at {self.hunger}% hunger")
+        print(f"{self.pet_name} is at {self.hunger}% hunger")
 
         if self.hunger > 50 and self.hunger < 100:
             print(f"{self.pet_name} gained {self.warmth*0.1}% warmth.")
